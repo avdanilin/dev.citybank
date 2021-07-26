@@ -1,0 +1,24 @@
+/*<editor-fold desc="fonts">*/
+@font-face {
+	font-family: 'Arial';
+	font-weight: 400;
+	font-display: swap;
+	src: url('./fonts/Arial/Arial-Regular/Arial-Regular.eot'),
+	url("./fonts/Arial/Arial-Regular/Arial-Regular.ttf") format("truetype"),
+	url("./fonts/Arial/Arial-Regular/Arial-Regular.woff") format("woff"),
+	url("./fonts/Arial/Arial-Regular/Arial-Regular.otf") format("opentype"),
+	url("./fonts/Arial/Arial-Regular/Arial-Regular.svg#grablau") format("svg");
+}
+
+@font-face {
+	font-family: 'Arial';
+	font-weight: 700;
+	font-display: swap;
+	src: url('./fonts/Arial/Arial-Bold/Arial-Bold.eot'),
+	url("./fonts/Arial/Arial-Bold/Arial-Bold.ttf") format("truetype"),
+	url("./fonts/Arial/Arial-Bold/Arial-Bold.woff") format("woff"),
+	url("./fonts/Arial/Arial-Bold/Arial-Bold.otf") format("opentype"),
+	url("./fonts/Arial/Arial-Bold/Arial-Bold.svg#grablau") format("svg");
+}
+
+/*</editor-fold>*/
