@@ -26,12 +26,109 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-@@include('parts/header.html')
 <main>
-	<article>
-		<section></section>
-	</article>
+	@@include('parts/header.html')
+	<section class="section__post-header">
+		<div class="container">
+			<div class="row">
+				<a href="#" target="_blank" class="post post__first">
+					<span class="post__header">Post header 1</span>
+					<span class="post__hidden">
+						<span class="post__hidden-header">Post header 1</span>
+						<span class="post__hidden-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+					</span>
+				</a>
+				<a href="#" target="_blank" class="post post__second">
+					<span class="post__header">Post header 2</span>
+					<span class="post__hidden">
+						<span class="post__hidden-header">Post header 2</span>
+						<span class="post__hidden-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+					</span>
+				</a>
+				<a href="#" target="_blank" class="post post__third">
+					<span class="post__header">Post header 3</span>
+					<span class="post__hidden">
+						<span class="post__hidden-header">Post header 3</span>
+						<span class="post__hidden-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+					</span>
+				</a>
+			</div>
+			<div class="row">
+				<a href="#" target="_blank" class="post post__fourth">
+					<span class="post__header">Post header 4</span>
+					<span class="post__hidden">
+						<span class="post__hidden-header">Post header 4</span>
+						<span class="post__hidden-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+					</span>
+				</a>
+				<a href="#" target="_blank" class="post post__fifth">
+					<span class="post__header">Post header 5</span>
+					<span class="post__hidden">
+						<span class="post__hidden-header">Post header 5</span>
+						<span class="post__hidden-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="section-promo">
+		<div class="container">
+			<div class="row">
+				<div class="promo__img-wrap">
+					<img class="promo__img" src="./img/section-promo/monitor.png" alt="Title text">
+				</div>
+				<div class="promo__block">
+					<h2 class="promo__title">Title text</h2>
+					<ol class="promo__list">
+						<li class="promo__item">
+							<button type="button" data-modal="external" class="promo__link">Duis aute irure dolor in reprehenderit1 in voluptate velit</button>
+						</li>
+						<li class="promo__item">
+							<button type="button" data-modal="external" class="promo__link">Ullamco laboris nisi ut aliquip ex ea commodo consequat</button>
+						</li>
+						<li class="promo__item">
+							<button type="button" data-modal="external" class="promo__link">Ut enim ad minim veniam, quis nostrud exercitation</button>
+						</li>
+						<li class="promo__item">
+							<button type="button" data-modal="external" class="promo__link">Et dolore magna aliqua</button>
+						</li>
+						<li class="promo__item">
+							<button type="button" data-modal="external" class="promo__link">Sed do eiusmod tempor <sup>2</sup> incididunt ut labore</button>
+						</li>
+						<li class="promo__item">
+							<button type="button" data-modal="external" class="promo__link">Lorem ipsum dolor sit amet <sup>3</sup> consectetur adipisicing elit</button>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-disclaimers">
+		<div class="container">
+			<div class="row">
+				<ul class="disclaimer-list">
+					<li class="disclaimer-item">Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</li>
+					<li class="disclaimer-item">Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+					<li class="disclaimer-item">Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 </main>
+<div id="external" class="modal__wrap">
+	<div class="modal">
+		<div class="modal__header">
+			<h3 class="modal__title">External link</h3>
+			<button type="button" class="modal__close" aria-label="Close"></button>
+		</div>
+		<p class="modal__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et </p>
+		<div class="modal__footer">
+			<button type="button" class="btn transparent" aria-label="Cancel">Cancel</button>
+			<button type="button" class="btn blue" aria-label="Accept">Accept</button>
+		</div>
+	</div>
+</div>
+<div class="modal__backdrop" aria-hidden="true"></div>
 <script src="app.js"></script>
 </body>
 </html>

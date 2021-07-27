@@ -29,11 +29,11 @@ function fav() {
     return src('src/favicon-16x16.png').pipe(
         favicons({
             settings: {
-                appName: 'citybank',
-                appShortName: 'citybank',
-                appDescription: 'citybank',
+                appName: 'Citibank',
+                appShortName: 'Citibank',
+                appDescription: 'Citibank',
                 path: 'favicons/',
-                url: 'citybank',
+                url: 'Citibank',
                 display: 'standalone',
                 orientation: 'portrait',
                 scope: '',
@@ -66,7 +66,8 @@ function css() {
     return src([
         'src/libs/css/reset.css',
         'src/libs/css/normalize.css',
-        'src/css/**.css'])
+        'src/css/style.css',
+        'src/css/responsive.css'])
         .pipe(!isProd ? sourcemaps.init() : util.noop())
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions'],

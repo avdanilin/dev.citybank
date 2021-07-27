@@ -8,6 +8,10 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+* {
+	/*box-sizing: border-box;*/
+}
+
 html {
 	height: 100%;
 	line-height: 1.2; /* 1 */
@@ -23,9 +27,11 @@ html {
  */
 
 body {
-	position: relative;
-	height: 100%;
 	margin: 0;
+}
+
+body.fixed {
+	overflow: hidden;
 }
 
 /**
@@ -33,7 +39,6 @@ body {
  */
 
 main {
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 auto;
@@ -207,6 +212,9 @@ button,
 [type="reset"],
 [type="submit"] {
 	-webkit-appearance: button;
+	border: unset;
+	background: unset;
+	padding: 0;
 }
 
 /**
