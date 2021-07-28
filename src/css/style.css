@@ -64,14 +64,14 @@
 	width: 12px;
 	height: 12px;
 	cursor: pointer;
-	background-image: url('/img/icons/icon-blue-clear.png');
+	background-image: url('./img/icons/icon-blue-clear.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .form__item._error .form__item-clear {
-	background-image: url('/img/icons/icon-red-clear.png');
+	background-image: url('./img/icons/icon-red-clear.png');
 }
 
 .form__item._error .form__label {
@@ -326,7 +326,7 @@
 	display: block;
 	width: 30px;
 	height: 30px;
-	background: transparent url('/img/icons/icon-close.png') center / cover no-repeat;
+	background: transparent url('./img/icons/icon-close.png') center / cover no-repeat;
 }
 
 .modal .modal__body {
